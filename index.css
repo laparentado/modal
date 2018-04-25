@@ -1,0 +1,58 @@
+.wrapper{
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid red;
+  font-family:sans-serif;
+}
+
+.topimage{
+  background-image: url("biz.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  grid-column-start:1;
+  grid-column-end: 3;
+}
+
+.title{
+  font-size: 30px;
+  color: gold;
+  text-align: center;
+  grid-column-start:1;
+  grid-column-end: 3;
+}
+
+.right{
+  border: 1px solid;
+  text-align: justify;
+  grid-column-start:1;
+  grid-column-end: 2;
+  padding: 5px;
+}
+
+.left{
+  border: 1px solid;
+  text-align: justify;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding: 5px;
+}
+
+@media all and (max-width: 480px){
+  .topimage{
+    height: 200px;
+  }
+}
+
+@media all and (min-width: 481px) and (max-width: 768px){
+  .topimage{
+    height: 300px;
+  }
+}
+
+@media all and (min-width:769px) and (max-width: 992px){
+  .topimage{
+    height: 400px;
+  }
+}
